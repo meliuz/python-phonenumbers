@@ -3524,7 +3524,7 @@
     <territory id="BR" countryCode="55"
                internationalPrefix="00(?:1[245]|2[1-35]|31|4[13]|[56]5|99)"
                nationalPrefix="0"
-               nationalPrefixForParsing="0(?:(1[245]|2[1-35]|31|4[13]|[56]5|99)(\d{10,11}))?"
+               nationalPrefixForParsing="0(?:(1[2-8]|2[13-7]|3[146]|4[1569]|5[368]|6[1-58]|7[1-68]|8[1257]|9[158])(\\d{10,11}))?"
                nationalPrefixTransformRule="$2" mobileNumberPortableRegion="true">
       <references>
         <sourceUrl>http://en.wikipedia.org/wiki/%2B55</sourceUrl>
@@ -3572,7 +3572,7 @@
               [14689][1-9]|
               2[12478]|
               3[1-578]|
-              5[1-5]|
+              5[13-5]|
               7[13-579]
             )9
           </leadingDigits>
@@ -3604,14 +3604,7 @@
       </availableFormats>
       <generalDesc>
         <nationalNumberPattern>
-          [1-46-9]\d{7,10}|
-          5(?:
-            [0-4]\d{7,9}|
-            5(?:
-              [2-8]\d{7}|
-              9\d{7,8}
-            )
-          )
+          [1-9]\d{7,10}
         </nationalNumberPattern>
         <possibleNumberPattern>\d{8,11}</possibleNumberPattern>
       </generalDesc>
@@ -3652,7 +3645,11 @@
              complete and ranges which are in transition. Generally we keep ranges in transition
              until a few months after we are notified that they are not in use (b/28458993). -->
         <nationalNumberPattern>
-          1[1-9](?:
+          (?:[1689][1-9]|
+          2[12478]|
+          3[1-578]|
+          7[13-579]
+          )(?:
             7|
             9\d
           )\d{7}|

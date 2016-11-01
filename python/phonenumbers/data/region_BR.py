@@ -15,7 +15,7 @@ PHONE_METADATA_BR = PhoneMetadata(id='BR', country_code=55, international_prefix
     voicemail=PhoneNumberDesc(),
     no_international_dialling=PhoneNumberDesc(national_number_pattern='(?:300\\d|40(?:0\\d|20))\\d{4}', possible_number_pattern='\\d{8}', example_number='40041234', possible_length=(8,)),
     national_prefix='0',
-    national_prefix_for_parsing='0(?:(1[245]|2[1-35]|31|4[13]|[56]5|99)(\\d{10,11}))?',
+    national_prefix_for_parsing='0(?:(1[2-8]|2[13-7]|3[146]|4[1569]|5[368]|6[1-58]|7[1-68]|8[1257]|9[158])(\\d{10,11}))?',
     national_prefix_transform_rule='\\2',
     number_format=[NumberFormat(pattern='(\\d{4})(\\d{4})', format='\\1-\\2', leading_digits_pattern=['[2-9](?:[1-9]|0[1-9])'], national_prefix_formatting_rule='\\1'),
         NumberFormat(pattern='(\\d{5})(\\d{4})', format='\\1-\\2', leading_digits_pattern=['9(?:[1-9]|0[1-9])'], national_prefix_formatting_rule='\\1'),
