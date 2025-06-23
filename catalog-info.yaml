@@ -1,0 +1,21 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: meliuz/python-phonenumbers
+  description: '# as dialled from GB, not a GB number
+
+    >>> print z
+
+    Country Code: 1 National Number: 6502532222 Leading Zero(s): False
+
+    ```
+
+
+    The `PhoneNumber` object tha...'
+  name: python-phonenumbers
+spec:
+  lifecycle: production
+  type: service
