@@ -1,0 +1,6 @@
+---
+site_name: python-phonenumbers
+nav:
+  - Home: README.md
+plugins:
+  - techdocs-core
